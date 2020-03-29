@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Testador de CEP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″>
+        <meta name="description" content="Quer saber seu endereço pelo CEP? Então use esse Testador de CEP!">
+        <meta name="keywords" content="CEP,cep">
+        <meta name="author" content="Caio Vieira de Castro Lima">
+
+        <!--FONTE ROBOTO-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="main.css">
+
+        <!--BOOTSTRAP-->
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+        <!--JAVASCRIPT-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="javascript.js"></script>
+        
+        <!--SOCIAL BUTTONS-->
+        <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+    </head>
+    
+    <body>
+        <main class="cep-card">
+            <form>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="testeceptitle">TESTADOR DE CEP</h1>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <h3 class="testcepsubtitle">*Digite seu CEP e clique na área branca/tab/submit.</h3>
+                    </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                      <label>CEP</label>
+                      <input type="text" class="form-control" id="cep" onblur="pesquisacep(this.value);" >
+                  </div>
+                  <div class="form-group col-md-8">
+                      <label>Logradouro</label>
+                      <input type="text" class="form-control" id="logradouro">
+                  </div>
+                </div>
+               
+                <div class="form-row">
+                  <div class="form-group col-md-5">
+                      <label>Bairro</label>
+                      <input type="text" class="form-control" id="bairro">
+                  </div>
+                  <div class="form-group col-md-5">
+                      <label>Cidade</label>
+                      <input type="text" class="form-control" id="cidade">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label>Estado</label>
+                    <input type="text" class="form-control" id="uf">
+                </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary" type="button" onclick="pesquisacep(cep.value);">SUBMIT</button>
+                </div>
+            </form>
+                
+        </main>
+    
+        <footer>
+            <div class="container cont-foot">
+                <div class="row butrow">
+                    <div class="col-sm-7">
+                        <h4 class="textorodape">Made by: <a href="https://linkedin.com/in/caiovieiralima" target="_blank">Caio Lima</a></h4>
+                    </div>
+                    
+                    <div class="col-md-5" style="margin-top: -3%;">
+                        <a class="btn btn-social-icon btn-github" target="_blank" href="https://github.com/CaioLima96"><span class="fa fa-github"></span></a>
+                        <a class="btn btn-social-icon btn-linkedin" target="_blank" href="https://www.instagram.com/agente_sabe_arts/"><span class="fa fa-linkedin"></span></a>
+                        <a class="btn btn-social-icon btn-instagram" target="_blank" href="https://www.instagram.com/agente_sabe_arts/"><span class="fa fa-instagram"></span></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
