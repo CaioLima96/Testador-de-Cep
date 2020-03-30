@@ -77,9 +77,15 @@ body {
 
 @font-face {
     font-family: FunSized;
-    src: url(fontes/FunSized.woff);
+    src: url(fontes/FunSized.ttf);
 }
  
+/*.cepob:after { asterisco vermelho
+    content:" *" !important; 
+    color: red !important;
+}*/
+
+
 .testeceptitle {
     font-family: FunSized;
     font-size: 36px;
@@ -125,3 +131,4 @@ footer {
 .btn {
     margin-top: 8% !important;
 }
+
